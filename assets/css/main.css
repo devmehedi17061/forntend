@@ -254,3 +254,214 @@ footer {
   background: var(--accent);
   color: var(--white);
 }
+
+/* Corporate Hub Section */
+.hub-wrapper {
+  background: var(--white);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hub-sidebar {
+  background: var(--bg-light);
+  padding: 3rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hub-main {
+  padding: 3rem;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.event-item:hover {
+  transform: translateX(8px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.event-date {
+  min-width: 60px;
+  height: 60px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.event-date .day {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.event-date .month {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.event-info h6 {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--primary);
+}
+
+.event-meta {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Calendar Refinement */
+.calendar-mock {
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 991.98px) {
+  .hub-sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Dashboard Tabs */
+.nav-pills-custom .nav-link {
+  color: var(--text-light);
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.nav-pills-custom .nav-link.active {
+  background: var(--accent);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.dashboard-preview-img {
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  border: 8px solid var(--white);
+}
+
+/* Steps */
+.step-item {
+  position: relative;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--accent);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.1);
+}
+
+/* Pricing */
+.pricing-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.pricing-card.featured {
+  background: var(--primary);
+  color: var(--white);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+.pricing-card.featured .text-muted {
+  color: #94a3b8 !important;
+}
+
+.pricing-card .price {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 1.5rem 0;
+}
+
+/* FAQ */
+.accordion-item {
+  border: none;
+  background: transparent;
+  margin-bottom: 1rem;
+}
+
+.accordion-button {
+  background: var(--white) !important;
+  color: var(--primary) !important;
+  font-weight: 600;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow) !important;
+  padding: 1.25rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--accent) !important;
+  color: var(--white) !important;
+}
+
+.accordion-body {
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: 0 0 12px 12px;
+  margin-top: -5px;
+  box-shadow: var(--shadow);
+}
+
+/* Contact Form Overrides */
+.form-control {
+  padding: 0.8rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--bg-light);
+}
+
+.form-control:focus {
+  background: var(--white);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
