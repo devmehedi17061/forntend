@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <!-- AOS Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -21,7 +23,7 @@
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
-        <span style="color: var(--accent);">HRM</span> Solutions
+        <span style="color: var(--accent);">NMC</span> HR
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -57,10 +59,27 @@
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
           <div class="position-relative">
-            <img src="assets/images/admin_dashboard.png" alt="HR Solutions" class="img-fluid rounded-4 shadow-lg">
+            <!-- Hero Slider -->
+            <div class="swiper heroSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images/admin_dashboard.png" alt="HR Solutions 1"
+                    class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/hr_panel.png" alt="HR Solutions 2" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/employee_portal.png" alt="HR Solutions 3"
+                    class="img-fluid rounded-4 shadow-lg">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
             <div
               class="position-absolute bottom-0 start-0 m-4 p-3 bg-white rounded-3 shadow-sm border-start border-4 border-primary d-none d-md-block"
-              style="max-width: 200px;" data-aos="zoom-in" data-aos-delay="400">
+              style="max-width: 200px; z-index: 10;" data-aos="zoom-in" data-aos-delay="400">
               <p class="mb-0 small fw-bold text-dark">"Empowering 500+ global enterprises."</p>
             </div>
           </div>
@@ -439,35 +458,110 @@
         <h2 class="section-title">What Our Clients Say</h2>
         <p class="text-muted">Trusted by HR leaders across the globe.</p>
       </div>
+      <div class="swiper testimonialSwiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="service-card text-center h-100">
+              <p class="mb-4">"This system transformed our HR department. Automated payroll alone saved us 20 hours a
+                month."</p>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <span class="fw-bold">Sarah Jenkins</span>
+                <span class="small text-muted">| HR Director, TechFlow</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-card text-center h-100">
+              <p class="mb-4">"The attendance tracking is flawless. Even our remote employees find it incredibly easy to
+                use."</p>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <span class="fw-bold">James Wilson</span>
+                <span class="small text-muted">| COO, Global Logistics</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-card text-center h-100">
+              <p class="mb-4">"Finally, an HR tool that actually provides meaningful reports. Our analytics have never
+                been better."</p>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <span class="fw-bold">Linda Chen</span>
+                <span class="small text-muted">| CEO, Innovate Hub</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-card text-center h-100">
+              <p class="mb-4">"I am very happy with the service provided by HRM Solutions. The team is very professional
+                and the platform is very user-friendly."</p>
+              <div class="d-flex align-items-center justify-content-center gap-2">
+                <span class="fw-bold">Mynul Islam</span>
+                <span class="small text-muted">| CEO, Innovate Hub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-5 position-relative"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News Section -->
+  <section id="news" class="py-5">
+    <div class="container py-5">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title">Latest Updates</h2>
+        <p class="text-muted">Stay informed with the latest trends and news in HR technology.</p>
+      </div>
       <div class="row g-4">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-card text-center">
-            <p class="mb-4">"This system transformed our HR department. Automated payroll alone saved us 20 hours a
-              month."</p>
-            <div class="d-flex align-items-center justify-content-center gap-2">
-              <span class="fw-bold">Sarah Jenkins</span>
-              <span class="small text-muted">| HR Director, TechFlow</span>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="news-card h-100">
+            <div class="news-img"
+              style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800');">
+            </div>
+            <div class="news-content">
+              <div class="news-date">
+                <i class="bi bi-calendar3 me-1"></i> Oct 24, 2025
+              </div>
+              <h5 class="fw-bold mb-3">AI and the Future of HR Management</h5>
+              <p class="text-muted small mb-4">Discover how artificial intelligence is reshaping recruitment and
+                employee engagement strategies in modern enterprises.</p>
+              <a href="#" class="btn btn-link p-0 text-decoration-none fw-bold">Read More <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-card text-center">
-            <p class="mb-4">"The attendance tracking is flawless. Even our remote employees find it incredibly easy to
-              use."</p>
-            <div class="d-flex align-items-center justify-content-center gap-2">
-              <span class="fw-bold">James Wilson</span>
-              <span class="small text-muted">| COO, Global Logistics</span>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="news-card h-100">
+            <div class="news-img"
+              style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800');">
+            </div>
+            <div class="news-content">
+              <div class="news-date">
+                <i class="bi bi-calendar3 me-1"></i> Nov 12, 2025
+              </div>
+              <h5 class="fw-bold mb-3">Maximizing Remote Team Productivity</h5>
+              <p class="text-muted small mb-4">Essential tools and techniques for managing remote teams effectively
+                while maintaining high employee morale.</p>
+              <a href="#" class="btn btn-link p-0 text-decoration-none fw-bold">Read More <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-card text-center">
-            <p class="mb-4">"Finally, an HR tool that actually provides meaningful reports. Our analytics have never
-              been
-              better."</p>
-            <div class="d-flex align-items-center justify-content-center gap-2">
-              <span class="fw-bold">Linda Chen</span>
-              <span class="small text-muted">| CEO, Innovate Hub</span>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="news-card h-100">
+            <div class="news-img"
+              style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800');">
+            </div>
+            <div class="news-content">
+              <div class="news-date">
+                <i class="bi bi-calendar3 me-1"></i> Dec 05, 2025
+              </div>
+              <h5 class="fw-bold mb-3">Data-Driven HR: Why it Matters</h5>
+              <p class="text-muted small mb-4">How leveraging workforce analytics can lead to better decision-making and
+                improved organizational growth.</p>
+              <a href="#" class="btn btn-link p-0 text-decoration-none fw-bold">Read More <i
+                  class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -475,60 +569,7 @@
     </div>
   </section>
 
-  <!-- Pricing Section -->
-  <section id="pricing" class="py-5">
-    <div class="container py-5">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title">Flexible Pricing</h2>
-        <p class="text-muted">Choose a plan that scales with your organization.</p>
-      </div>
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="pricing-card">
-            <h5 class="fw-bold">Basic</h5>
-            <p class="small text-muted">Perfect for small teams</p>
-            <div class="price">$49<span class="fs-6 fw-normal">/mo</span></div>
-            <ul class="list-unstyled mb-5">
-              <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Up to 20 Employees</li>
-              <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Attendance Tracking</li>
-              <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Basic Reports</li>
-              <li class="text-muted"><i class="bi bi-dash text-muted me-2"></i> No Payroll Integration</li>
-            </ul>
-            <button class="btn btn-outline w-100">Choose Plan</button>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="pricing-card featured">
-            <div class="badge bg-accent px-3 py-1 rounded-pill mb-3">Popular</div>
-            <h5 class="fw-bold">Standard</h5>
-            <p class="small text-muted opacity-75">Growing organizations</p>
-            <div class="price">$99<span class="fs-6 fw-normal">/mo</span></div>
-            <ul class="list-unstyled mb-5">
-              <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i> Up to 100 Employees</li>
-              <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i> Advanced Attendance</li>
-              <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i> Automated Payroll</li>
-              <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i> HR Management Panel</li>
-            </ul>
-            <button class="btn btn-primary w-100">Choose Plan</button>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="pricing-card">
-            <h5 class="fw-bold">Enterprise</h5>
-            <p class="small text-muted">Unlimted power & scale</p>
-            <div class="price">Custom</div>
-            <ul class="list-unstyled mb-5">
-              <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Unlimited Employees</li>
-              <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Custom Integrations</li>
-              <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> Dedicated Support</li>
-              <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i> On-premise Option</li>
-            </ul>
-            <button class="btn btn-outline w-100">Contact Sales</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- FAQ Section -->
   <section id="faq" class="py-5 bg-light">
@@ -600,7 +641,7 @@
             <div class="fs-4 text-primary"><i class="bi bi-envelope-at"></i></div>
             <div>
               <p class="mb-0 small text-muted">Email us</p>
-              <h6 class="fw-bold mb-0">hello@smarthr.com</h6>
+              <h6 class="fw-bold mb-0">hello@nmchr.com</h6>
             </div>
           </div>
           <div class="d-flex align-items-center gap-3">
@@ -648,7 +689,7 @@
     <div class="container">
       <div class="row g-4 mb-4">
         <div class="col-lg-4">
-          <h4 class="fw-bold mb-4"><span style="color: var(--accent);">HRM</span> Solutions</h4>
+          <h4 class="fw-bold mb-4"><span style="color: var(--accent);">NMC</span> HR</h4>
           <p class="footer-text">Empowering organizations through innovative human resource management and strategic
             talent solutions.</p>
           <div class="social-links">
@@ -667,21 +708,30 @@
           </ul>
         </div>
         <div class="col-lg-4">
-          <h6 class="fw-bold mb-4">Newsletter</h6>
-          <p class="footer-text small">Stay updated with the latest in HR tech.</p>
-          <div class="input-group mb-3">
-            <input type="text" class="form-control bg-dark border-secondary text-white" placeholder="Email address">
-            <button class="btn btn-primary" type="button">Subscribe</button>
-          </div>
+          <h6 class="fw-bold mb-4">Contact Info</h6>
+          <ul class="list-unstyled footer-text small">
+            <li class="mb-3 d-flex align-items-start gap-3">
+              <i class="bi bi-geo-alt text-primary mt-1"></i>
+              <span>123 Business Avenue, Suite 500<br>New York, NY 10001</span>
+            </li>
+            <li class="mb-3 d-flex align-items-center gap-3">
+              <i class="bi bi-telephone text-primary"></i>
+              <span>+1 (234) 567-890</span>
+            </li>
+            <li class="mb-3 d-flex align-items-center gap-3">
+              <i class="bi bi-envelope text-primary"></i>
+              <span>hello@nmchr.com</span>
+            </li>
+          </ul>
         </div>
       </div>
       <hr class="border-secondary opacity-25">
       <div class="row align-items-center">
         <div class="col-md-6 text-center text-md-start">
-          <p class="mb-0 footer-text small">© 2026 HRM Solutions. All rights reserved.</p>
+          <p class="mb-0 footer-text small">© 2026 NMC HR. All rights reserved.</p>
         </div>
         <div class="col-md-6 text-center text-md-end">
-          <p class="mb-0 footer-text small">hello@hrmsolutions.com | +1 (234) 567-890</p>
+          <p class="mb-0 footer-text small">hello@nmchr.com | +1 (234) 567-890</p>
         </div>
       </div>
     </div>
@@ -690,6 +740,8 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
   <script>
     AOS.init({
       duration: 1000,
