@@ -206,7 +206,7 @@
         <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
           <div class="step-item">
             <div class="step-number">1</div>
-            <h6 class="fw-bold">Create Company</h6>
+            <h6 class="fw-bold">Create Account</h6>
             <p class="small text-muted">Set up your organization profile and departments.</p>
           </div>
         </div>
@@ -235,42 +235,7 @@
     </div>
   </section>
 
-  <!-- Dashboard Preview -->
-  <section id="dashboard-preview" class="py-5 bg-primary text-white overflow-hidden">
-    <div class="container py-5">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-5" data-aos="fade-right">
-          <h2 class="fw-bold mb-4 text-white">Intuitive Interfaces for <span class="text-accent">Every User</span></h2>
-          <p class="opacity-75 mb-5">Our system provides tailored dashboards for different roles, ensuring the right
-            tools
-            are always at hand.</p>
-          <div class="nav flex-column nav-pills nav-pills-custom gap-3" id="v-pills-tab" role="tablist">
-            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#admin-panel" type="button">Admin
-              Dashboard</button>
-            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#hr-panel" type="button">HR
-              Management</button>
-            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#employee-portal" type="button">Employee
-              Portal</button>
-          </div>
-        </div>
-        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
-          <div class="tab-content">
-            <div class="tab-pane fade show active" id="admin-panel">
-              <img src="assets/images/admin_dashboard.png" class="img-fluid dashboard-preview-img"
-                alt="Admin Dashboard">
-            </div>
-            <div class="tab-pane fade" id="hr-panel">
-              <img src="assets/images/hr_panel.png" class="img-fluid dashboard-preview-img" alt="HR Panel">
-            </div>
-            <div class="tab-pane fade" id="employee-portal">
-              <img src="assets/images/employee_portal.png" class="img-fluid dashboard-preview-img"
-                alt="Employee Portal">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- Benefits Section -->
   <section id="benefits" class="py-5">
@@ -449,6 +414,107 @@
       </div>
     </div>
   </section>
+
+  <!-- Task Management Section -->
+  <section id="tasks" class="task-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title">Task Management</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">Track, manage, and collaborate on organizational tasks
+          with precision and efficiency.</p>
+      </div>
+
+      <!-- View Controls -->
+      <div class="task-view-controls" data-aos="fade-up" data-aos-delay="100">
+        <button class="task-view-btn active"><i class="bi bi-list-ul"></i> List View</button>
+        <button class="task-view-btn"><i class="bi bi-grid-3x3-gap"></i> Board View</button>
+        <button class="task-view-btn"><i class="bi bi-calendar3"></i> Timeline</button>
+      </div>
+
+      <div class="task-list-wrapper" data-aos="fade-up" data-aos-delay="200">
+        <!-- Task 1 -->
+        <div class="task-card">
+          <div class="task-info-group">
+            <div class="task-status-indicator status-progress" title="In Progress"></div>
+            <div class="task-content">
+              <span class="task-name">Q4 Employee Performance Review</span>
+              <div class="task-metadata">
+                <div class="task-meta-item">
+                  <i class="bi bi-person-circle"></i>
+                  <span>HR Department</span>
+                </div>
+                <div class="task-meta-item">
+                  <i class="bi bi-calendar-check"></i>
+                  <span>Due: Oct 30, 2025</span>
+                </div>
+                <div class="badge-priority priority-high">High Priority</div>
+              </div>
+            </div>
+          </div>
+          <div class="task-action-buttons">
+            <button class="btn-view-pdf"><i class="bi bi-file-pdf"></i> View PDF</button>
+            <button class="btn-details">Details</button>
+          </div>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="task-card">
+          <div class="task-info-group">
+            <div class="task-status-indicator status-todo" title="To Do"></div>
+            <div class="task-content">
+              <span class="task-name">New Employee Onboarding Kit</span>
+              <div class="task-metadata">
+                <div class="task-meta-item">
+                  <i class="bi bi-person-circle"></i>
+                  <span>Operations Team</span>
+                </div>
+                <div class="task-meta-item">
+                  <i class="bi bi-calendar-check"></i>
+                  <span>Due: Nov 05, 2025</span>
+                </div>
+                <div class="badge-priority priority-medium">Medium Priority</div>
+              </div>
+            </div>
+          </div>
+          <div class="task-action-buttons">
+            <button class="btn-view-pdf"><i class="bi bi-file-pdf"></i> View PDF</button>
+            <button class="btn-details">Details</button>
+          </div>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="task-card">
+          <div class="task-info-group">
+            <div class="task-status-indicator status-completed" title="Completed"></div>
+            <div class="task-content">
+              <span class="task-name">Annual Tax Documentation Update</span>
+              <div class="task-metadata">
+                <div class="task-meta-item">
+                  <i class="bi bi-person-circle"></i>
+                  <span>Finance Unit</span>
+                </div>
+                <div class="task-meta-item">
+                  <i class="bi bi-calendar-check text-success"></i>
+                  <span class="text-success">Completed: Oct 15</span>
+                </div>
+                <div class="badge-priority priority-low">Low Priority</div>
+              </div>
+            </div>
+          </div>
+          <div class="task-action-buttons">
+            <button class="btn-view-pdf"><i class="bi bi-file-pdf"></i> View PDF</button>
+            <button class="btn-details">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="#" class="btn btn-primary">Go to Dashboard</a>
+      </div>
+    </div>
+  </section>
+
+
 
 
   <!-- Testimonials -->
@@ -731,7 +797,7 @@
           <p class="mb-0 footer-text small">© 2026 NMC HR. All rights reserved.</p>
         </div>
         <div class="col-md-6 text-center text-md-end">
-          <p class="mb-0 footer-text small">hello@nmchr.com | +1 (234) 567-890</p>
+          <p class="mb-0 footer-text small">hello@nmchr.com |1 (234) 567-890</p>
         </div>
       </div>
     </div>
@@ -759,6 +825,15 @@
         navbar.classList.remove('shadow-sm');
         navbar.style.background = 'rgba(255, 255, 255, 0.8)';
       }
+    });
+    // Task View Toggles
+    const taskBtns = document.querySelectorAll('.task-view-btn');
+    taskBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        taskBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        // Add logic here to switch views if needed in the future
+      });
     });
   </script>
 
