@@ -42,6 +42,15 @@ body {
   color: var(--primary) !important;
   font-size: 1.5rem;
   letter-spacing: -0.025em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  border-radius: 8px;
 }
 
 .nav-link {
@@ -496,7 +505,7 @@ footer {
 
 .heroSwiper .swiper-slide img {
   width: 100%;
-  height: 100%;
+  height: 450px;
   object-fit: cover;
 }
 
